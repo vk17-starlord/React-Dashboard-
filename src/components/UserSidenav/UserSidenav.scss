@@ -1,0 +1,130 @@
+@import '../../index.scss';
+.UserSidenav{
+    position: -webkit-sticky;
+    min-height: 120vh;
+    width: 100%;
+    position: fixed;
+    width: 20vw;
+
+    right:0;
+}
+
+.top-profile{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.top-profile *{
+    margin: 0 10px;
+}
+
+.top-profile img{
+    max-width: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+.application-container{
+
+    width: 100%;
+    border-top: 1px solid rgba(204, 204, 204, 0.295);
+    border-left: 1px solid rgba(204, 204, 204, 0.295);
+    border-radius: 12px 0 0 0;
+    min-height: 80vh;
+    padding: 20px 0;
+    .wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .g-btn{
+            width: 36px;
+            height: 36px;
+            font-size: 16px;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            vertical-align: middle;
+            text-align: center;
+            i{
+                vertical-align: baseline;
+            }
+            background-color:lighten($color: #212226, $amount: 15);
+        }
+    }
+    p{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 400;
+        opacity: .7;
+    }
+    .app-container{
+        width: 100%;
+        padding: 10px;
+        min-height: 70vh;
+        transform: translateY(-10%);
+        background-color: lighten($color: #212226, $amount: 5);
+        border-radius: 20px 20px 0 0;
+     
+        h4{
+            font-size: 18px  !important;
+            opacity: .8;
+            margin: 20px auto !important;
+display: flex;
+justify-content: space-between;
+padding: 0 10px;
+align-items: center;
+        }
+        .a-card{
+            width: 100%;
+            margin: 5px auto;
+            h6{
+
+                text-transform: capitalize;
+padding: 0 !important;
+line-height: 1;
+
+                font-size: 14px;
+                margin: 0 !important;
+            }
+            .user{
+                font-size:36px;
+            }
+            p{
+                text-transform: capitalize;
+                span{
+                    color: $blue;
+                }
+                font-size: 12px !important;
+                width: 100%;
+                text-align: left;
+                margin: 5px auto !important;
+            }
+            >div{
+                margin: 0;
+                padding: 0;
+                min-height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+
+            }
+        }
+    }
+    .img{
+        width: 100%;
+        min-height: 20vh;
+        background-size: contain;
+        background-position: center;
+        margin: 20px auto;
+        background-repeat: no-repeat;
+        background-image: url('./undraw_Resume_re_hkth.svg');
+    }
+}
