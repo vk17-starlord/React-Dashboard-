@@ -194,6 +194,8 @@ input {
   width: 100%;
   min-height: 100vh;
   padding: 20px;
+  -webkit-transform: translateX(2.5%);
+          transform: translateX(2.5%);
 }
 
 .dashboard h3 {
@@ -525,6 +527,10 @@ input {
 }
 
 @media screen and (max-width: 900px) {
+  .dashboard {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
   .upper-container {
     margin: 20px auto;
   }
