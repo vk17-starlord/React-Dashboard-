@@ -580,6 +580,12 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
+  .card-wrapper h4 {
+    font-size: 18px !important;
+  }
+  .card-wrapper p {
+    font-size: 16px !important;
+  }
   .card-wrapper > div {
     width: 60% !important;
   }
