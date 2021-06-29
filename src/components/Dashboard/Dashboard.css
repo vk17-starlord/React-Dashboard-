@@ -240,15 +240,6 @@ input {
   border-radius: 12px;
   border: 1px solid rgba(204, 204, 204, 0.288);
   min-height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 12px;
 }
 
@@ -575,8 +566,24 @@ input {
             align-items: center;
   }
   .v-wrapper * {
-    min-width: 150px !important;
-    min-height: 150px !important;
-    max-width: 50% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-wrapper > div {
+    width: 60% !important;
+  }
+  .card-wrapper .v-wrapper {
+    width: 40% !important;
   }
 }
